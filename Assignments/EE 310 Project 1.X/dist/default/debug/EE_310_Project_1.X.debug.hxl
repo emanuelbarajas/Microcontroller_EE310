@@ -1,0 +1,55 @@
+### HEXMate logfile and output summary ###
+
+### Command-line arguments ###
+ /tmp/xcdhOQRCZ/driver_tmp_3.o
+ -Odist/default/debug/EE_310_Project_1.X.debug.hex
+ -logfile=dist/default/debug/EE_310_Project_1.X.debug.hxl
+ -addressing=1
+ -break=300000
+
+### Memory Usage ###
+ Input file ranges:
+  20h - 43h		(/tmp/xcdhOQRCZ/driver_tmp_3.o)
+  100h - 111h		(/tmp/xcdhOQRCZ/driver_tmp_3.o)
+  150h - 163h		(/tmp/xcdhOQRCZ/driver_tmp_3.o)
+  200h - 20Dh		(/tmp/xcdhOQRCZ/driver_tmp_3.o)
+  250h - 25Dh		(/tmp/xcdhOQRCZ/driver_tmp_3.o)
+  300h - 339h		(/tmp/xcdhOQRCZ/driver_tmp_3.o)
+  300000h - 300009h		(/tmp/xcdhOQRCZ/driver_tmp_3.o)
+ Unused ranges:
+  0h - 1Fh
+  44h - FFh
+  112h - 14Fh
+  164h - 1FFh
+  20Eh - 24Fh
+  25Eh - 2FFh
+  33Ah - 2FFFFFh
+
+### Hex Memory Map ###
+ Legend:
+  -- = Unused memory
+  H1 = Input file             (/tmp/xcdhOQRCZ/driver_tmp_3.o)
+----------------------------------------------------------
+         | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+----------------------------------------------------------
+00000020 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000030 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000040 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
+----------------------------------------------------------
+00000100 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000110 | H1 H1 -- -- -- -- -- -- -- -- -- -- -- -- -- --
+----------------------------------------------------------
+00000150 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000160 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
+----------------------------------------------------------
+00000200 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- --
+----------------------------------------------------------
+00000250 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- --
+----------------------------------------------------------
+00000300 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000310 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000320 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000330 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
+----------------------------------------------------------
+00300000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
+00300010 | --

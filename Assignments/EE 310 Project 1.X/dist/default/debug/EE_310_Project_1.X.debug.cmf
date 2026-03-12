@@ -1,0 +1,275 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/main.o
+absdata - 0 20 20 31A 1 1
+config CONFIG 4 300000 300000 A 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-1FFF 1
+SFR 3800-3FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 0-1F 1
+CONST 33A-1FFFF 1
+IDLOC 200000-20000F 1
+SMALLCONST 2000-FFFF 1
+SMALLCONST 12000-1FFFF 1
+CODE 0-1F 1
+CODE 33A-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BIGRAM 0-1F 1
+BIGRAM 33A-1FFF 1
+BIGSFR 3800-3FFF 1
+COMRAM 0-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 2000-FFFF 1
+MEDIUMCONST 12000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/main.o
+20 absdata ABS >69:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+22 absdata ABS >70:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+24 absdata ABS >72:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+26 absdata ABS >73:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+28 absdata ABS >75:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+2A absdata ABS >76:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+2C absdata ABS >77:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+2E absdata ABS >79:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+30 absdata ABS >80:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+32 absdata ABS >81:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+34 absdata ABS >83:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+36 absdata ABS >84:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+3A absdata ABS >86:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+3C absdata ABS >87:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+40 absdata ABS >88:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+100 absdata ABS >92:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+102 absdata ABS >93:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+104 absdata ABS >94:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+106 absdata ABS >95:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+108 absdata ABS >96:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+10E absdata ABS >97:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+150 absdata ABS >101:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+152 absdata ABS >102:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+156 absdata ABS >104:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+158 absdata ABS >105:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+15A absdata ABS >106:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+160 absdata ABS >107:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+200 absdata ABS >111:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+202 absdata ABS >112:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+204 absdata ABS >113:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+20A absdata ABS >114:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+250 absdata ABS >118:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+252 absdata ABS >119:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+254 absdata ABS >120:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+25A absdata ABS >121:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+300 absdata ABS >125:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+302 absdata ABS >126:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+304 absdata ABS >127:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+306 absdata ABS >128:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+30A absdata ABS >129:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+30E absdata ABS >132:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+310 absdata ABS >133:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+312 absdata ABS >134:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+316 absdata ABS >137:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+31A absdata ABS >138:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+31E absdata ABS >141:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+320 absdata ABS >142:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+322 absdata ABS >143:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+326 absdata ABS >144:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+32A absdata ABS >147:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+32C absdata ABS >148:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+32E absdata ABS >149:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+332 absdata ABS >152:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+336 absdata ABS >153:/Users/emanuelbarajas/MPLABXProjects/EE 310 Project 1.X/main.asm
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 35A 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 60000A 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__Hudata_bank8 0 0 ABS 0 udata_bank8 -
+__Hudata_bank9 0 0 ABS 0 udata_bank9 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Labsdata 0 0 ABS 0 absdata -
+__Hudata_bank10 0 0 ABS 0 udata_bank10 -
+__Hudata_bank11 0 0 ABS 0 udata_bank11 -
+__Hudata_bank12 0 0 ABS 0 udata_bank12 -
+__Hudata_bank13 0 0 ABS 0 udata_bank13 -
+__Hudata_bank14 0 0 ABS 0 udata_bank14 -
+__Hudata_bank15 0 0 ABS 0 udata_bank15 -
+__Hudata_bank16 0 0 ABS 0 udata_bank16 -
+__Hudata_bank17 0 0 ABS 0 udata_bank17 -
+__Hudata_bank18 0 0 ABS 0 udata_bank18 -
+__Hudata_bank19 0 0 ABS 0 udata_bank19 -
+__Hudata_bank20 0 0 ABS 0 udata_bank20 -
+__Hudata_bank21 0 0 ABS 0 udata_bank21 -
+__Hudata_bank22 0 0 ABS 0 udata_bank22 -
+__Hudata_bank23 0 0 ABS 0 udata_bank23 -
+__Hudata_bank24 0 0 ABS 0 udata_bank24 -
+__Hudata_bank25 0 0 ABS 0 udata_bank25 -
+__Hudata_bank26 0 0 ABS 0 udata_bank26 -
+__Hudata_bank27 0 0 ABS 0 udata_bank27 -
+__Hudata_bank28 0 0 ABS 0 udata_bank28 -
+__Hudata_bank29 0 0 ABS 0 udata_bank29 -
+__Hudata_bank30 0 0 ABS 0 udata_bank30 -
+__Hudata_bank31 0 0 ABS 0 udata_bank31 -
+isa$xinst 0 0 ABS 0 - build/default/debug/main.o
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 30000A 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__Habsdata 33A 0 ABS 0 absdata -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 0 0 ABS 0 udata_bank10 -
+__Ludata_bank11 0 0 ABS 0 udata_bank11 -
+__Ludata_bank12 0 0 ABS 0 udata_bank12 -
+__Ludata_bank13 0 0 ABS 0 udata_bank13 -
+__Ludata_bank14 0 0 ABS 0 udata_bank14 -
+__Ludata_bank15 0 0 ABS 0 udata_bank15 -
+__Ludata_bank16 0 0 ABS 0 udata_bank16 -
+__Ludata_bank17 0 0 ABS 0 udata_bank17 -
+__Ludata_bank18 0 0 ABS 0 udata_bank18 -
+__Ludata_bank19 0 0 ABS 0 udata_bank19 -
+__Ludata_bank20 0 0 ABS 0 udata_bank20 -
+__Ludata_bank21 0 0 ABS 0 udata_bank21 -
+__Ludata_bank22 0 0 ABS 0 udata_bank22 -
+__Ludata_bank23 0 0 ABS 0 udata_bank23 -
+__Ludata_bank24 0 0 ABS 0 udata_bank24 -
+__Ludata_bank25 0 0 ABS 0 udata_bank25 -
+__Ludata_bank26 0 0 ABS 0 udata_bank26 -
+__Ludata_bank27 0 0 ABS 0 udata_bank27 -
+__Ludata_bank28 0 0 ABS 0 udata_bank28 -
+__Ludata_bank29 0 0 ABS 0 udata_bank29 -
+__Ludata_bank30 0 0 ABS 0 udata_bank30 -
+__Ludata_bank31 0 0 ABS 0 udata_bank31 -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/debug/main.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Ludata_bank8 0 0 ABS 0 udata_bank8 -
+__Ludata_bank9 0 0 ABS 0 udata_bank9 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_acs 0 0 ABS 0 udata_acs -
+__Ludata_acs 0 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
