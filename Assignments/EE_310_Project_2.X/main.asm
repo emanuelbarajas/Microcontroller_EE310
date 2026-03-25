@@ -34,9 +34,9 @@
 #include "AssemblyConfig.inc"
 #include <xc.inc>
     
-innerLoop EQU 1
-outerLoop EQU 1
-thirdLoop EQU 1
+innerLoop EQU 125
+outerLoop EQU 100
+thirdLoop EQU 12
 
 
 ;---------------------
